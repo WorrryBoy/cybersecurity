@@ -4,7 +4,7 @@ i = 0
 next.addEventListener('click', ()=> {
     i+=410;
     document.querySelector('.slider-wrapper').style.right = i + 'px';
-    if (i > 1250) {
+    if (i > 1660) {
        document.querySelector('.slider-wrapper').style.right = 0; 
        i = 0;
     }; 
@@ -12,7 +12,7 @@ next.addEventListener('click', ()=> {
 previous.addEventListener('click', ()=> {
     i-= 410;
     if (i < 0) {
-        i = 1250;
+        i = 1660;
     };
     document.querySelector('.slider-wrapper').style.right = i + 'px';
 });
