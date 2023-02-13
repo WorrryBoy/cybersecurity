@@ -4,7 +4,7 @@ i = 0
 next.addEventListener('click', ()=> {
     i+=410;
     document.querySelector('.slider-wrapper').style.right = i + 'px';
-    if (i > 1660) {
+    if (i > 1640) {
        document.querySelector('.slider-wrapper').style.right = 0; 
        i = 0;
     }; 
@@ -12,7 +12,7 @@ next.addEventListener('click', ()=> {
 previous.addEventListener('click', ()=> {
     i-= 410;
     if (i < 0) {
-        i = 1660;
+        i = 1640;
     };
     document.querySelector('.slider-wrapper').style.right = i + 'px';
 });
@@ -88,4 +88,75 @@ let burger = document.querySelector('.burger-menu');
 burger.addEventListener('click', ()=> {
     menu.classList.toggle('initial-menu');
     document.querySelector('body').classList.toggle('body-hidden')
+});
+
+let statisticSt = document.querySelector('.num-statisctic-1')
+let statisticNd = document.querySelector('.num-statisctic-2')
+let statisticRd = document.querySelector('.num-statisctic-3')
+let statisticTh = document.querySelector('.num-statisctic-4')
+const time = 4000 //ms
+const step = 1
+
+function OutNum(num, elem) {
+    n = 0
+    let t = Math.round(time/(num/step))
+    let interval = setInterval(()=> {
+        n = n + step
+        if (n == num) {
+            clearInterval(interval)
+        }
+        statisticSt.innerHTML = n + '%'
+
+    },
+    t);
+}
+function OutNum1(num, elem) {
+    n1 = 0
+    let t = Math.round(time/(num/step))
+    let interval = setInterval(()=> {
+        n1 = n1 + step
+        if (n1 == num) {
+            clearInterval(interval)
+        }
+        statisticNd.innerHTML = n1 + '%'
+
+    },
+    t);
+}
+function OutNum2(num, elem) {
+    n2 = 0
+    let t = Math.round(time/(num/step))
+    let interval = setInterval(()=> {
+        n2 = n2 + step
+        if (n2 == num) {
+            clearInterval(interval)
+        }
+        statisticRd.innerHTML = n2 + '%'
+
+    },
+    t);
+}
+function OutNum3(num, elem) {
+    n3 = 0
+    let t = Math.round(time/(num/step))
+    let interval = setInterval(()=> {
+        n3 = n3 + step
+        if (n3 == num) {
+            clearInterval(interval)
+        }
+        statisticTh.innerHTML = n3 + '%'
+    },
+    t);
+}
+p = 10
+let infocyber = document.querySelector('.statistics');
+window.addEventListener('scroll', ()=> {
+    ScrollDistance = window.scrollY 
+    if (ScrollDistance > document.querySelector('.img-cyberthreat').offsetTop + 360 && p == 10 || window.offsetTop == document.querySelector('.info-cyberthreat').offsetTop){
+        OutNum(73, statisticSt)
+        OutNum1(44, statisticNd)
+        OutNum2(40, statisticRd)
+        OutNum3(37, statisticTh)
+        p = 6
+    }
 });
