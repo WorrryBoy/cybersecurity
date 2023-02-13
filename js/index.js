@@ -152,7 +152,7 @@ p = 10
 let infocyber = document.querySelector('.statistics');
 window.addEventListener('scroll', ()=> {
     ScrollDistance = window.scrollY 
-    if (ScrollDistance > document.querySelector('.img-cyberthreat').offsetTop + 450 && p == 10 || window.offsetTop == document.querySelector('.info-cyberthreat').offsetTop){
+    if (ScrollDistance > document.querySelector('.img-cyberthreat').offsetTop + 850 && p == 10 || window.offsetTop == document.querySelector('.info-cyberthreat').offsetTop){
         OutNum(73, statisticSt)
         OutNum1(44, statisticNd)
         OutNum2(40, statisticRd)
