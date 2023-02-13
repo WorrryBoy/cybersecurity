@@ -689,6 +689,9 @@ footer {
     text-align: justify;
 
 }
+.info-cyberthreat {
+    position: relative;
+}
 .new-cyberthreat::before {
     content: '';
     position: absolute;
@@ -698,18 +701,14 @@ footer {
     background-repeat: no-repeat;
     z-index: -1;
 }
-.new-cyberthreat {
-    position: relative;
-}
 .new-cyberthreat::after {
     content: '';
     position: absolute;
-    width:400px;
+    width:600px;
     height: 600px;
     background: url(../img/intro_decor.png);
     background-repeat: no-repeat;
     right: 0;
-    top: 50%;
     rotate: 180deg;
     z-index: -1;
 }
