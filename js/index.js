@@ -94,7 +94,7 @@ let statisticSt = document.querySelector('.num-statisctic-1')
 let statisticNd = document.querySelector('.num-statisctic-2')
 let statisticRd = document.querySelector('.num-statisctic-3')
 let statisticTh = document.querySelector('.num-statisctic-4')
-const time = 4000 //ms
+const time = 3500 //ms
 const step = 1
 
 function OutNum(num, elem) {
