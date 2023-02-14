@@ -5,8 +5,11 @@
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #fcfcfc;
-  }
-  
+}
+.left-title h2 {
+    font-size: 18px;
+    color: #fff;
+} 
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background-color:#7e11c793;
